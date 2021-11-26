@@ -1,3 +1,4 @@
+/*index page*/
 .tagline {
 	font-size: 66px;
 	font-style: normal;
@@ -52,4 +53,70 @@
 	padding: 18px 76px;
 	background: none;
 	transition: 0.7s;
+}
+
+/*sign-in page*/
+
+.welcome {
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 45px;
+	letter-spacing: -0.02em;
+	text-align: center;
+}
+
+.paragraph {
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+.e-mail {
+	width: 90%;
+	border: 1px solid #4975E9;
+	box-sizing: border-box;
+	border-radius: 8px;
+	height: 45px;
+}
+
+.forgotPass {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 150%;
+	color: #1B2F48;
+	margin-left: 70%;
+}
+
+.btn-signIn {
+	background: #2B3C58;
+	border-radius: 8px;
+	padding: 18px 106px;
+	color: white;
+}
+
+.btn-signIn:hover {
+	color: #2B3C58;
+	border: 3px solid #2B3C58;
+	padding: 18px 106px;
+	background: none;
+	transition: 0.7s;
+}
+
+.ellipse1 {
+	position: absolute;
+	left: 45vw;
+	top: 8vh;
+	z-index: -1;
+}
+
+.ellipse2 {
+	position: absolute;
+	left: 44vw;
+	top: 32vh;
+	z-index: -2;
 }
