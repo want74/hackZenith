@@ -31,11 +31,12 @@
 				</div>
 			</div>
 		</div>
-		
+
 	</div>	
 </body>
 </html>
 <script type="text/javascript">
+	// хостинг: логин botgy пароль vanyaGAY если будут ЛЮБЫЕ траблы то РАЗБУДИ МЕНЯ
 	//переменные для шага
 	let box = document.querySelectorAll('.box');
 	let s=0;
