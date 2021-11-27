@@ -1,7 +1,7 @@
 <?php
 session_start();
 	include "connect.php";
-	$query = mysqli_query($con, "SELECT * FROM users WHERE  id='{$_SESSION['id']}'");
+	$query = mysqli_query($con, "SELECT * FROM users WHERE id='{$_SESSION['id']}'");
 	$stroka=$query->fetch_assoc();
 
 
@@ -21,6 +21,7 @@ session_start();
 	}
 </style>
 <body>
+
 	<div class="col">
 		<!--header-->
 		<div class="row bg-dark" style="height: 7vh;">
@@ -34,11 +35,11 @@ session_start();
 				<div class="row">
 					<div class="col-8 mx-auto">
 						<div class="row" style="margin-top:20vh;">
-							<div class="col border pt-5 pb-5 box" style="background: green;"></div>
-							<div class="col border pt-5 pb-5 box"></div>
-							<div class="col border pt-5 pb-5 box"></div>
-							<div class="col border pt-5 pb-5 box"></div>
-							<div class="col border pt-5 pb-5 box"></div>
+							<div class="col border pt-5 pb-5 box boxclick" ></div>
+							<div class="col border pt-5 pb-5 box boxclick"></div>
+							<div class="col border pt-5 pb-5 box boxclick"></div>
+							<div class="col border pt-5 pb-5 box boxclick"></div>
+							<div class="col border pt-5 pb-5 box boxclick"></div>
 						</div>
 					</div>
 				</div>
@@ -63,20 +64,22 @@ session_start();
 	//переменные для шага
 	let box = document.querySelectorAll('.box');
 	let task = document.querySelector('.task');
+	let boxclick = document.querySelectorAll('.boxclick');
 	let tasktext = document.querySelector('.task-text');
 	let btnstart = document.querySelector('.btnstart');
 	let text=["Жим гантелей лежа на наклонной скамье (головой вверх): 3 подхода по 6-10 повторений.", "Жим штанги/гантелей лежа (на горизонтальной скамье): 3 подхода по 6-10 повторений.", "Отжимание на брусьях (или перекладине): 3 подхода по 8-12 повторений.", "Отжимание от пола (со жгутом): 3 подхода по 6-12 повторений или до отказа.", "Сведение рук на блоках (сверху вниз): 3 подхода, число повторов от 10 до максимума.", ];
-	let s=<?php echo $stroka['grudak'] ?>;
+	let s=<?php echo $stroka['grudak_lvl']?>;
+	let n=s-1;
 	//функции шага
-	box[s].onclick=function(){
+	box[s].style.background="green"
+	boxclick[s].onclick=function(){
 		task.style.display="block"
-		tasktext.innerHTML=text[s] 
+		tasktext.innerHTML=text[s]
+
 	}
 	btnstart.onclick=function(){
 		task.style.display="none"
-		box[s].style.background="white"
 		s++
-		box[s].style.background="green"
 		window.location.href = "update-level.php"
 	}
 

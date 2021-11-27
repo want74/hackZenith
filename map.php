@@ -5,6 +5,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@600&display=swap" rel="stylesheet">
 	<title></title>
 	<style>
 		/*Ховер на все элементы SVG*/
@@ -12,23 +15,59 @@
 			opacity: 0.6;
 			transition: 0.4s;
 		}
+		.btn-garbage {
+		width: 70%;
+		margin: auto;
+		background: none;
+		border: 3px solid #E0E2DB;
+		box-sizing: border-box;
+		border-radius: 28px;
+		color: #E0E2DB;
+		}
+		.header-botgy{
+			background:#082A30 ;
+		}
+		.header-text{
+		color: #E0E2DB;
+		font-family: 'Montserrat', sans-serif;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 36px;
+		line-height: 125%;
+		}
 	</style>
 </head>
 <body>
 	<div class="col">
 		<!--header-->
-		<div class="row bg-dark" style="height: 7vh;">
-			<div class="col">
-				
+	<div class="row header-botgy" >
+		<div class="col">
+			<div class="row col-10 mx-auto">				
+				<div class="col-6 mx-auto"><h1 style="" class=" header-text mx-auto py-2">BOTGY</h1>	</div>
+				<div class="col-4 my-auto">
+					<div class="row">
+						<div class="col-9 mx-auto">
+							<div class="row">
+								<div class="col"><button class="btn btn-garbage w-100">Мой аккаунт</button></div>
+								<div class="col"><button class="btn btn-garbage w-100">ГТО</button></div>				
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+	</div>
+
 		<!--content-->
 		<div class="row">
-			<div class="col-8 bg-secondary mx-auto" style="height: 600px;margin-top: 10vh;">
-				<div class="row">
-					<div class="col-8 mx-auto">
+
+			<div class="col-8  mx-auto" >
+
+				<div class="row ">
+					<div class="col-10 mx-auto">
 						<!--Чел-->
-						<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="443" height="380" viewBox="0 0 443 380" fill="none" version="1.1" id="svg295" sodipodi:docname="человек перед зад.svg" inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)">
+						<h1 class="text-center">Выберите мышцу</h1>
+						<p class="text-center"><svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="443" height="380" viewBox="0 0 443 380" fill="none" version="1.1" id="svg295" sodipodi:docname="человек перед зад.svg" inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)">
 							  <defs id="defs299"/>
 							  <sodipodi:namedview id="namedview297" pagecolor="#505050" bordercolor="#eeeeee" borderopacity="1" inkscape:pageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" showgrid="false" inkscape:zoom="1.4142136" inkscape:cx="153.08862" inkscape:cy="166.52365" inkscape:window-width="1920" inkscape:window-height="1017" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg295"/>
 							  <path d="M111.5 24C111.714 7.01236 106.715 2.72327 92 1L92.5 204.5L115.5 273C114.668 289.115 116.085 298.017 124 313.5L131 350L127 357L131 362L128 376H159L143.5 350C145.454 310.17 145.391 290.641 141.5 265C142.027 245.274 141.125 236.421 138.5 222.5C135.186 204.685 131.381 194.733 123.5 177V151L130 125.5L142.5 148.5C143.517 163.66 146.463 171.515 155.5 184.5L156.5 191L153.5 195.5V213.5L146.5 220.5L166 229L172 219L173 204.5L180 211.5C182.547 212.586 183.096 211.95 183.5 210L177.5 194.5L170 189C167.296 165.769 163.685 153.186 156 131C154.989 114.439 153.385 105.255 149 89L147.5 75C142.454 69.3219 138.08 67.3219 128 65.5C119.767 63.9728 115.541 62.3473 109 57.5C106.703 52.2868 107.07 49.3211 109 44L114.5 34.5V24H111.5Z" fill="#C7BDBD" stroke="#C7BDBD" id="path155"/>
@@ -161,7 +200,8 @@
 							    <path d="M390.5 94.9998C385.591 93.2304 382.852 91.5148 378 87.4998C377.551 96.348 376.86 100.246 375 105.5C380.456 100.839 383.767 98.4624 390.5 94.9998Z" fill="#082A30" stroke="#082A30" id="path251"/>
 							    <path d="M311.51 94.9998C316.419 93.2304 319.158 91.5148 324.01 87.4998C324.458 96.348 325.15 100.246 327.01 105.5C321.554 100.839 318.243 98.4624 311.51 94.9998Z" fill="#082A30" stroke="#082A30" id="path281"/>
 							  </g>
-							</svg>
+							</svg></p>
+						
 					</div>
 				</div>
 			</div>

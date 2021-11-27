@@ -6,11 +6,13 @@
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title></title>
 	<style>
 		body {
 			background-image: url('../img/girya.png');
 		}
+		
 	</style>
 </head>
 <body>
@@ -24,12 +26,9 @@
 					<p class="textFirstPage ml-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam turpis tellus, mollis eget fermentum ac, lacinia eu leo. Maecenas nec leo posuere, molestie dolor ut, aliquet ex. Phasellus ac dolor ornare neque congue eleifend. Donec ultrices euismod pretium. Integer mattis et dui in vestibulum. Aenean placerat erat nulla, vel blandit sem commodo et. Nunc convallis a ligula non fermentum.</p>
 				</div>
 				<div class="row mt-4">
-					<form action="reginsert.php" method="POST">
-						<button type="button" class="btn btn-reg mx-2">Регистрация</button>
-					</form>
-					<form action="go.php" method="POST" >
-						<button type="button" class="btn btn-vhod mx-3 submit">Войти</button>
-					</form>
+						<button type="button" onClick='location.href="reginsert.php"' class="btn btn-reg mx-2">Регистрация</button>
+						<button type="button" onClick='location.href="go.php"' class="btn btn-vhod mx-3 submit">Войти</button>
+				
 				</div>
 			</div>
 		</div>

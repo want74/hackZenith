@@ -1,49 +1,129 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@600&display=swap" rel="stylesheet">
 	<title></title>
-	<style>
-		body {
-			background: #C7BDBD;
-		}
-	</style>
 </head>
-<body>
-	<div class="col-4 mx-auto">
-		<div class="row" style="margin-top:25vh;height:50vh;border-radius: 25px;background: #98AEB3;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
-			<div class="col-10 mx-auto">
+<style type="text/css">
+	.bg-left{
+		background: #082A30;
+	}
+	.bg-right{
+		background: #EAEAEA;
+	}
+	.text{
+		color:#E0E2DB ;
+	}
+	.text-please{
+		color: #181743;
+	}
+	.paragrapReg {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 54px;
+		line-height: 66px;
+	}
+
+	.headerReg {
+		width:65%;
+		color: #082A30;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 32px;
+		line-height: 48px;
+		display: flex;
+		align-items: center;
+	}
+
+	.inputWho {
+		height: 50px;
+		width: 90%;
+		border: 1px solid #BEBDFF;
+		border-radius: 8px;
+		background: white;
+	}
+	.who {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.btn-signIn {
+	background: #22525A;
+	padding: 15px 106px;
+	border-radius: 30px;
+	
+	color: white;
+	}
+
+	.btn-signIn:hover {
+	color: #9FB4C0;
+	border: 3px solid #9FB4C0;
+	padding: 18px 106px;
+	background: none;
+	transition: 0.7s;
+	}
+</style>
+<body style="background: #EAEAEA;">
+	<div class="col">
+		<div class="row">
+			<div class="col-5"  style="height: 100vh;background: #082A30;">
 				<div class="row">
-					<p class="welcome mx-auto mt-5">
-						ДОБРО ПОЖАЛОВАТЬ!
-					</p>
+					<h1 class="mx-auto text-white logo mt-3">
+						BOTGY
+					</h1>
 				</div>
-				<div class="row">
-					<p class="paragraph mx-auto">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</p>
-				</div>
-				<div class="row">
-					<form action="check.php" method="POST" class="w-100">						
-  						<input type="text" class="form-control e-mail mx-auto" placeholder="Email" name="email">
-  						<input type="text" class="form-control e-mail mx-auto mt-4" placeholder="Password" name="password">
-  						<p class="forgotPass mt-1">Забыли пароль?</p>
-  						<div class="row">
-  							<button class="btn btn-signIn mx-auto">
-	  							Войти
-	  						</button>	
-  						</div>  						
-					</form>
+				<div class="row" style="margin-top:40vh;">					
+					<p class="text-white w-100 paragrapReg text-center">Рады видеть вас снова!</p>
 				</div>
 			</div>
+			<div class="col">
+				<div class="row">
+					<div class="col-8 mx-auto " style="margin-top:25vh;" >
+						<div class="row">
+							<p class="headerReg">Введите данные для входа</p>
+						</div>
+						<form action="reg.php" method="POST">
+							
+							<div class="row mt-5">
+								<div class="col">
+									<div class="row">
+										<p class="who">Электронная почта:</p>
+									</div>
+									<div class="row">
+										<input type="text" name="email" class="form-control inputWho mr-auto w-100" placeholder="itsbond@jamesbond.com" style="">								
+									</div>
+								</div>
+							</div>
+							<div class="row mt-5">
+								<div class="col">
+									<div class="row">
+										<p class="who">Придумайте пароль:</p>
+									</div>
+									<div class="row">
+										<input type="password" name="password" class="form-control inputWho mr-auto w-100" placeholder="123345678" style="">							
+									</div>
+								</div>
+							</div>
+							<div class="row mt-5">
+								<div class="col">
+									<div class="row mx-auto">
+										<button class="btn-signIn form-control">Войти!</button>							
+									</div>
+								</div>
+							</div>								
+							
+						</form>						
+					</div>
+				</div>
+			</div>     
 		</div>
 	</div>
-	<img src="img/ellipse1.png" class="ellipse1">
-	<img src="img/ellipse2.png" class="ellipse2">
 </body>
-</html>
+</html  
 
