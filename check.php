@@ -7,9 +7,9 @@ session_start();
 	$stroka=$query->fetch_assoc();
 	if (mysqli_num_rows($query)>0) {
 		$_SESSION['id']=$stroka['id'];
-		header('location: main.php');
+		header('location: game.php');
 	}
 	else{
-		header('location: login.php');
+		header('location: go.php');
 	}
 ?>

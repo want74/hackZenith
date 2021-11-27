@@ -28,14 +28,14 @@
 					</p>
 				</div>
 				<div class="row">
-					<form action="#" method="post" class="w-100">						
-  						<input type="text" class="form-control e-mail mx-auto" placeholder="Email">
-  						<input type="text" class="form-control e-mail mx-auto mt-4" placeholder="Password">
+					<form action="check.php" method="POST" class="w-100">						
+  						<input type="text" class="form-control e-mail mx-auto" placeholder="Email" name="email">
+  						<input type="text" class="form-control e-mail mx-auto mt-4" placeholder="Password" name="password">
   						<p class="forgotPass mt-1">Забыли пароль?</p>
   						<div class="row">
   							<button class="btn btn-signIn mx-auto">
 	  							Войти
-	  						</button>
+	  						</button>	
   						</div>  						
 					</form>
 				</div>
