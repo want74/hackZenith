@@ -50,6 +50,21 @@
 		font-size: 20px;
 		line-height: 24px;
 	}
+	.btn-signIn {
+	background: #22525A;
+	padding: 15px 106px;
+	border-radius: 30px;
+	
+	color: white;
+	}
+
+	.btn-signIn:hover {
+	color: #9FB4C0;
+	border: 3px solid #9FB4C0;
+	padding: 18px 106px;
+	background: none;
+	transition: 0.7s;
+	}
 </style>
 <body style="background: #EAEAEA;">
 	<div class="col">
@@ -66,18 +81,18 @@
 			</div>
 			<div class="col">
 				<div class="row">
-					<div class="col-8 mx-auto mt-5">
+					<div class="col-8 mx-auto " style="margin-top:25vh;" >
 						<div class="row">
 							<p class="headerReg">Пожалуйста, пройдите регистрацию</p>
 						</div>
-						<form action="">
+						<form action="reg.php" method="POST">
 							<div class="row mt-3">
 								<div class="col">
 									<div class="row">
 										<p class="who">Имя:</p>
 									</div>
 									<div class="row">
-										<input type="text" class="form-control inputWho mr-auto" placeholder="James" style="">									
+										<input type="text" name="name" class="form-control inputWho mr-auto" placeholder="James" style="">									
 									</div>
 								</div>
 								<div class="col-6 ml-auto">
@@ -85,7 +100,7 @@
 										<p class="who">Фамилия:</p>
 									</div>
 									<div class="row">
-										<input type="text" class="form-control inputWho w-100" placeholder="Bond">
+										<input type="text" name="second" class="form-control inputWho w-100" placeholder="Bond">
 									</div>
 								</div>
 							</div>
@@ -95,7 +110,7 @@
 										<p class="who">Электронная почта:</p>
 									</div>
 									<div class="row">
-										<input type="text" class="form-control inputWho mr-auto w-100" placeholder="itsbond@jamesbond.com" style="">								
+										<input type="text" name="email" class="form-control inputWho mr-auto w-100" placeholder="itsbond@jamesbond.com" style="">								
 									</div>
 								</div>
 							</div>
@@ -105,11 +120,26 @@
 										<p class="who">Придумайте пароль:</p>
 									</div>
 									<div class="row">
-										<input type="text" class="form-control inputWho mr-auto w-100" placeholder="123345678" style="">
-										<input type="checkbox" class="form-check-input" name="country" value="<?= $country->id ?>" aria-label="checkbox">								
+										<input type="password" name="password" class="form-control inputWho mr-auto w-100" placeholder="123345678" style="">							
 									</div>
 								</div>
 							</div>
+							<div class="row mt-3">
+								<div class="col">
+									<div class="row mx-auto">
+										<input type="checkbox" class="form-check-input " name="country" value="<?= $country->id ?>" aria-label="checkbox">
+										<p>Я принимаю условия BODGY и ознакомлен с политикой конфиденциальности</p>								
+									</div>
+								</div>
+							</div>
+							<div class="row mt-3">
+								<div class="col">
+									<div class="row mx-auto">
+										<button class="btn-signIn form-control"> Зарегестрироваться</button>							
+									</div>
+								</div>
+							</div>								
+							
 						</form>						
 					</div>
 				</div>
@@ -117,4 +147,4 @@
 		</div>
 	</div>
 </body>
-</html>
+</html  
