@@ -20,20 +20,17 @@ session_start();
 </head>
 
 <style type="text/css">
-	.header-color{
-		background: #000000;
-	}
-	.header-text{
-		color: #C7BDBD;
-		font-family: 'Montserrat', sans-serif;
-	font-style: normal;
-	font-weight: 800;
-	font-size: 36px;
-	line-height: 125%;
-	}
 	.header-botgy{
-		background:#515A82 ;
-	}
+			background:#082A30 ;
+		}
+		.header-text{
+		color: #E0E2DB;
+		font-family: 'Montserrat', sans-serif;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 36px;
+		line-height: 125%;
+		}
 
 	.btn-garbage {
 		width: 70%;
@@ -86,18 +83,14 @@ session_start();
 	<div class="col">
 		<div class="row" style="height: 12vh;">
 		<div class="col">
-			<div class="row header-color">
-				<h1 class="text-center header-text py-2 mx-auto">КТО-ТО СКАЗАЛ ЧЕРНАЯ ПЯТНИЦА? В BOTGY СКИДКИ ДО 20%</h1>			
-			</div>
 			<div class="row header-botgy">				
 				<div class="col-4 offset-4"><h1 class="text-center header-text mx-auto py-2">BOTGY</h1>	</div>
 				<div class="col-4 my-auto">
 					<div class="row">
 						<div class="col-9 mx-auto">
 							<div class="row">
-								<div class="col"><button class="btn btn-garbage"><img src="img/cart.svg" class="w-50"></button></div>
 								<div class="col"><button class="btn btn-garbage w-100">Мой аккаунт</button></div>
-								<div class="col"><button class="btn btn-garbage w-100">К тренировкам</button></div>				
+								<div class="col"><button class="btn btn-garbage w-100" onClick='location.href="store.php"'>Магазин</button></div>				
 							</div>
 						</div>
 					</div>
@@ -150,7 +143,7 @@ session_start();
 						<div class="row"><img src="<?php echo $stroka['img']?>" class="card-img-top mx-auto mt-3" style="width:90%;"></div>
 						<div class="row"><p class="headingCard"><?php echo $stroka['title']?></p></div>
 						<div class="row"><p class="paragraphCard"><?php echo $stroka['text']?> </p></div>
-						<div class="row"><button class="btn btnCard">Click here!</button></div>
+						<div class="row"><button class="btn btnCard">В корзину</button></div>
 					</div>
 
 				

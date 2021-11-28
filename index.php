@@ -11,13 +11,14 @@
 	<style>
 		body {
 			background-image: url('../img/girya.png');
+			background-size: 100%;
 		}
 		
 	</style>
 </head>
 <body>
 	<div class="col-5">
-		<div class="row" style="margin-top:35vh;">
+		<div class="row" style="margin-top:60vh;">
 			<div class="col-10 ml-auto">
 				<div class="row">
 					<p class="tagline ml-3">BOTGY</p>

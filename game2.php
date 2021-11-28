@@ -106,8 +106,8 @@ session_start();
 	</style>
 </head>
 <body>
-	<!--header-->
-	<div class="row" style="height: 12vh;">
+	<div class="col">
+		<div class="row" style="height: 12vh;">
 		<div class="col">
 			<div class="row header-botgy">				
 				<div class="col-4 offset-4"><h1 class="text-center header-text mx-auto py-2">BOTGY</h1>	</div>
@@ -116,7 +116,7 @@ session_start();
 						<div class="col-9 mx-auto">
 							<div class="row">
 								<div class="col"><button class="btn btn-garbage w-100">Мой аккаунт</button></div>
-								<div class="col"><button class="btn btn-garbage w-100">Магазин</button></div>				
+								<div class="col"><button class="btn btn-garbage w-100" onClick='location.href="store.php"'>Магазин</button></div>				
 							</div>
 						</div>
 					</div>
@@ -209,6 +209,9 @@ session_start();
 			</div>	
 		</div>
 	</div>
+	</div>
+	<!--header-->
+	
 
 
 

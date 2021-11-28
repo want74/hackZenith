@@ -110,7 +110,16 @@
 			top: 1300px;
 		}
 		
-		.circle
+		.con{
+			background-image: url(img/form.png);
+			height:1339px;
+			width: 100%;
+		}
+
+		.js:hover {
+			width: 60px;
+			height: 60px;
+		}
 	</style>
 </head>
 <body style="background:#EAEAEA;"> 
@@ -140,9 +149,16 @@
 			<div class="col-8  mx-auto bg-white mt-5" style="border-radius: 25px;">
 				<div class="row"><h1 class="text-center mx-auto">Дорожная карта:</h1></div>	
 				<div class="row ">
-					<div class="col-11 mx-auto bg-dark mb-4" style="border-radius: 25px;height: 150vh;">
+					<div class="col-11 mx-auto bg-dark mb-4" style="border-radius: 25px;height: auto;">
 						<div class="row">
-							<div id="container"></div>
+							<div id="container" class="con">
+								<div style="position:absolute; left: 131px;top: 171px;" >
+									<img src="img/krug.png">
+								</div>
+								<a style="position:absolute; left: 547px;top: 170px;" href="game2.php" >
+									<img src="img/krug.png"class="js">
+								</a>
+							</div>
 						</div>						
 					</div>
 				</div>
@@ -151,76 +167,7 @@
 		
 	</div>	
 	<script>
-      var width = window.innerWidth;
-      var height = window.innerHeight;
-
-      var stage = new Konva.Stage({
-        container: 'container',
-        width: width,
-        height: height,
-      });
-
-      var layer = new Konva.Layer();
-
-      var f = new Konva.Line({
-        points: [80, 100,80, 300],
-        stroke: 'red',
-        strokeWidth: 5,
-      });
-
-      /*
-       * since each line has the same point array, we can
-       * adjust the position of each one using the
-       * move() method
-       */
-      f.move({
-        x: 100,
-        y: 0,
-      });
       
-
-      layer.add(f);
-
-      var s = new Konva.Line({
-        points: [80, 300,450, 300],
-        stroke: 'red',
-        strokeWidth: 5,
-      });
-
-      /*
-       * since each line has the same point array, we can
-       * adjust the position of each one using the
-       * move() method
-       */
-      s.move({
-        x: 100,
-        y: 0,
-      });
-      
-
-      layer.add(s);
-
-      var t = new Konva.Line({
-        points: [450, 300,450, 600],
-        stroke: 'red',
-        strokeWidth: 5,
-      });
-
-      /*
-       * since each line has the same point array, we can
-       * adjust the position of each one using the
-       * move() method
-       */
-      t.move({
-        x: 100,
-        y: 0,
-      });
-      
-
-      layer.add(t);
-
-      // add the layer to the stage
-      stage.add(layer);
     </script>
 </body>
 </html>
