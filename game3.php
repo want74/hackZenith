@@ -2,8 +2,10 @@
 session_start();
 	include "connect.php";
 	$query = mysqli_query($con, "SELECT * FROM store");
-	$query2 = mysqli_query($con, "SELECT * FROM users WHERE id='{$_SESSION['id']}'");
 	
+	
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -126,8 +128,8 @@ session_start();
 	<div class="row con1-color">
 		<div class="col-8 mx-auto ">
 			<div class="row col-10 mx-auto">
-				<img src="img/цифра.png">
-				<h1 class="text-center my-auto">ЖИМ ШТАНГИ ЛЕЖА ГОРИЗОНТАЛЬНО</h1>
+				<img src="img/number.png">
+				<h1 class="text-center my-auto">Сведение рук в тренажере бабочка</h1>
 			</div>
 		</div>
 	</div>
@@ -135,21 +137,23 @@ session_start();
 	<div class="row con1-color">
 		<div class="col-8 mx-auto ">
 			<div class="row col-10 mx-auto">
-				<p class="text-center"><img class="w-100" src="img/grudak.png"></p>
+				<p class="text-center"><img class="w-100" src="img/tren2.png"></p>
 			</div>
 		</div>
 	</div>
 	<div class="row header-botgy py-5">
 		<div class="col-8 mx-auto ">
 			<div class="row col-10 mx-auto">
-				<p class="text-tren"> 1.Примите положение лежа</p>
-				<p class="text-tren"> 2. ноги немного расставьте, </p>
-				<p class="text-tren"> 3. делая упор на пятки, но не отрывая носков стоп от поверхности пола. Теперь сведите лопатки вместе, затылок, плечи иягодицы прижмите к скамье.</p>
-				<p class="text-tren"> 4. Возьмитесь за гриф узким или широким хватом. </p>
+
+				<p class="text-tren"> 1.Рукоятки тренажера сводим к центру тела, за счет сокращения мышц груди;,</p>
+				<p class="text-tren"> 2. Смещение хвата вверх переносит акцент к верхнему пучку пекторальных мышц, опускание – к низу груди, но акценты незначительны;
+ </p>
+				<p class="text-tren"> 3.Разведение производится мягко, руки отводятся в стороны плавно, без рывков;
+</p>
+				<p class="text-tren"> 4. Движение лучше сводить и разводить на два счета, не делая рывков;
+ </p>
 				<p class="text-tren"> 5. Первый актуален для прокачки малых пекторальных мышц, </p>
-				<p class="text-tren"> 6. второй — больших. </p>
-				<p class="text-tren"> 7. Держите снаряд на вытянутых руках над грудью. На вдохе опустите его вниз, слегка касаясь грудины. </p>
-				<p class="text-tren"> 8. На выдохе вновь поднимите над собой. Предплечья должны быть перпендикулярны поверхности пола.</p>
+				<p class="text-tren"> 6.Все повторения выполняются без пауз, единым подходом, отдых между сетами 1-2 минуты</p>
 			</div>
 			<div class="col-10 mx-auto">
 				<button class="btn-end py-2 px-5  " onClick='location.href="update-level.php"' >Закончил</button>	

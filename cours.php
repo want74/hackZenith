@@ -3,6 +3,7 @@
 	include "connect.php";
 	$query = mysqli_query($con, "SELECT * FROM users WHERE id='{$_SESSION['id']}'");
 	$stroka=$query->fetch_assoc();
+	echo $stroka['grudak_lvl'];
 ?>
 
 <!DOCTYPE html>
@@ -156,52 +157,52 @@
 						<div class="row">
 							<div id="container" class="con">
 								<a href="game2.php">
-									<div class="rounded-circle krug-color" style="position:absolute; left: 131px;top: 171px; width: 60px; height: 60px;" >
+									<div class="rounded-circle krug-color  krug" style="position:absolute; left: 131px;top: 171px; width: 60px; height: 60px;" >
 									 
 									</div>
 								</a>							
-								<a href="game2.php" >
-									<div class="rounded-circle krug-color" style="position:absolute; left: 547px;top: 170px; width: 60px; height: 60px;" >
+								<a href="game3.php" >
+									<div class="rounded-circle krug-color  krug" style="position:absolute; left: 547px;top: 170px; width: 60px; height: 60px;" >
 									 
 									</div>
 								</a>
-								<a href="game2.php" >
-									<div class="rounded-circle krug-color" style="position:absolute; left: 542px; top: 502px; width: 60px; height: 60px;" >
+								<a href="game4.php" >
+									<div class="rounded-circle krug-color krug" style="position:absolute; left: 542px; top: 502px; width: 60px; height: 60px;" >
 									 
 									</div>
 								</a>
-								<a href="game2.php" >
-									<div class="rounded-circle krug-color" style="position:absolute;left: 966px; top: 502px; width: 60px; height: 60px;" >
+								<a href="game5.php" >
+									<div class="rounded-circle krug-color krug" style="position:absolute;left: 966px; top: 502px; width: 60px; height: 60px;" >
 									 
 									</div>
 								</a>
-								<a href="game2.php" >
-									<div class="rounded-circle krug-color" style="position:absolute;left: 966px; top: 778px; width: 60px; height: 60px;" >
+								<a href="game6.php" >
+									<div class="rounded-circle krug-color krug" style="position:absolute;left: 966px; top: 778px; width: 60px; height: 60px;" >
 									 	
 									</div>
 								</a>
-								<a href="game2.php" >
-									<div class="rounded-circle krug-color" style="position:absolute;left: 202px; top: 784px; width: 60px; height: 60px;" >
+								<a href="game7.php" >
+									<div class="rounded-circle krug-color krug" style="position:absolute;left: 202px; top: 784px; width: 60px; height: 60px;" >
 									 	
 									</div>
 								</a>
-								<a href="game2.php" >
-									<div class="rounded-circle krug-color" style="position:absolute;left: 202px; top: 1024px; width: 60px; height: 60px;" >
+								<a href="game8.php" >
+									<div class="rounded-circle krug-color krug" style="position:absolute;left: 202px; top: 1024px; width: 60px; height: 60px;" >
 									 	
 									</div>
 								</a>
-								<a href="game2.php" >
-									<div class="rounded-circle krug-color" style="position:absolute;left: 966px; top: 1024px; width: 60px; height: 60px;" >
+								<a href="game9.php" >
+									<div class="rounded-circle krug-color krug" style="position:absolute;left: 966px; top: 1024px; width: 60px; height: 60px;" >
 									 	
 									</div>
 								</a>
-								<a href="game2.php" >
-									<div class="rounded-circle krug-color" style="position:absolute;left: 966px; top: 1215px; width: 60px; height: 60px;" >
+								<a href="game10.php" >
+									<div class="rounded-circle krug-color krug" style="position:absolute;left: 966px; top: 1215px; width: 60px; height: 60px;" >
 									 	
 									</div>
 								</a>
-								<a href="game2.php" >
-									<div class="rounded-circle krug-color" style="position:absolute;left: 369px;top: 1215px; width: 60px; height: 60px;" >
+								<a href="game11.php" >
+									<div class="rounded-circle krug-color krug" style="position:absolute;left: 369px;top: 1215px; width: 60px; height: 60px;" >
 									 	
 									</div>
 								</a>
@@ -215,7 +216,11 @@
 		
 	</div>	
 	<script>
-      
+    let krug = document.querySelectorAll('.krug');
+	let s=<?php echo $stroka['grudak_lvl']?>;
+	//функции шага
+	krug[s].style.background="green"	
+
     </script>
 </body>
 </html>

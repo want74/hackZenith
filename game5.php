@@ -2,8 +2,10 @@
 session_start();
 	include "connect.php";
 	$query = mysqli_query($con, "SELECT * FROM store");
-	$query2 = mysqli_query($con, "SELECT * FROM users WHERE id='{$_SESSION['id']}'");
 	
+	
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -126,7 +128,7 @@ session_start();
 	<div class="row con1-color">
 		<div class="col-8 mx-auto ">
 			<div class="row col-10 mx-auto">
-				<img src="img/цифра.png">
+				<img src="img/number.png">
 				<h1 class="text-center my-auto">ЖИМ ШТАНГИ ЛЕЖА ГОРИЗОНТАЛЬНО</h1>
 			</div>
 		</div>
@@ -135,14 +137,15 @@ session_start();
 	<div class="row con1-color">
 		<div class="col-8 mx-auto ">
 			<div class="row col-10 mx-auto">
-				<p class="text-center"><img class="w-100" src="img/grudak.png"></p>
+				<p class="text-center"><img class="w-100" src="img/tren4.png"></p>
 			</div>
 		</div>
 	</div>
 	<div class="row header-botgy py-5">
 		<div class="col-8 mx-auto ">
 			<div class="row col-10 mx-auto">
-				<p class="text-tren"> 1.Примите положение лежа</p>
+
+				<p class="text-tren"> 1.Примите положение лежа,</p>
 				<p class="text-tren"> 2. ноги немного расставьте, </p>
 				<p class="text-tren"> 3. делая упор на пятки, но не отрывая носков стоп от поверхности пола. Теперь сведите лопатки вместе, затылок, плечи иягодицы прижмите к скамье.</p>
 				<p class="text-tren"> 4. Возьмитесь за гриф узким или широким хватом. </p>
