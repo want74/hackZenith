@@ -120,6 +120,9 @@
 			width: 60px;
 			height: 60px;
 		}
+		.krug-color{
+			background:#93B1B9 ;
+		}
 	</style>
 </head>
 <body style="background:#EAEAEA;"> 
@@ -152,12 +155,57 @@
 					<div class="col-11 mx-auto bg-dark mb-4" style="border-radius: 25px;height: auto;">
 						<div class="row">
 							<div id="container" class="con">
-								<div style="position:absolute; left: 131px;top: 171px;" >
-									<img src="img/krug.png">
-								</div>
-								<a style="position:absolute; left: 547px;top: 170px;" href="game2.php" >
-									<img src="img/krug.png"class="js">
+								<a href="game2.php">
+									<div class="rounded-circle krug-color" style="position:absolute; left: 131px;top: 171px; width: 60px; height: 60px;" >
+									 
+									</div>
+								</a>							
+								<a href="game2.php" >
+									<div class="rounded-circle krug-color" style="position:absolute; left: 547px;top: 170px; width: 60px; height: 60px;" >
+									 
+									</div>
 								</a>
+								<a href="game2.php" >
+									<div class="rounded-circle krug-color" style="position:absolute; left: 542px; top: 502px; width: 60px; height: 60px;" >
+									 
+									</div>
+								</a>
+								<a href="game2.php" >
+									<div class="rounded-circle krug-color" style="position:absolute;left: 966px; top: 502px; width: 60px; height: 60px;" >
+									 
+									</div>
+								</a>
+								<a href="game2.php" >
+									<div class="rounded-circle krug-color" style="position:absolute;left: 966px; top: 778px; width: 60px; height: 60px;" >
+									 	
+									</div>
+								</a>
+								<a href="game2.php" >
+									<div class="rounded-circle krug-color" style="position:absolute;left: 202px; top: 784px; width: 60px; height: 60px;" >
+									 	
+									</div>
+								</a>
+								<a href="game2.php" >
+									<div class="rounded-circle krug-color" style="position:absolute;left: 202px; top: 1024px; width: 60px; height: 60px;" >
+									 	
+									</div>
+								</a>
+								<a href="game2.php" >
+									<div class="rounded-circle krug-color" style="position:absolute;left: 966px; top: 1024px; width: 60px; height: 60px;" >
+									 	
+									</div>
+								</a>
+								<a href="game2.php" >
+									<div class="rounded-circle krug-color" style="position:absolute;left: 966px; top: 1215px; width: 60px; height: 60px;" >
+									 	
+									</div>
+								</a>
+								<a href="game2.php" >
+									<div class="rounded-circle krug-color" style="position:absolute;left: 369px;top: 1215px; width: 60px; height: 60px;" >
+									 	
+									</div>
+								</a>
+
 							</div>
 						</div>						
 					</div>

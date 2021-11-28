@@ -108,24 +108,31 @@ session_start();
 <body>
 	<div class="col">
 		<div class="row" style="height: 12vh;">
-		<div class="col">
-			<div class="row header-botgy">				
-				<div class="col-4 offset-4"><h1 class="text-center header-text mx-auto py-2">BOTGY</h1>	</div>
-				<div class="col-4 my-auto">
-					<div class="row">
-						<div class="col-9 mx-auto">
-							<div class="row">
-								<div class="col"><button class="btn btn-garbage w-100">Мой аккаунт</button></div>
-								<div class="col"><button class="btn btn-garbage w-100">Магазин</button></div>				
+			<div class="col">
+				<div class="row header-botgy">				
+					<div class="col-4 offset-4"><h1 class="text-center header-text mx-auto py-2">BOTGY</h1>	</div>
+					<div class="col-4 my-auto">
+						<div class="row">
+							<div class="col-9 mx-auto">
+								<div class="row">
+									<div class="col"><button class="btn btn-garbage w-100">Мой аккаунт</button></div>
+									<div class="col"><button class="btn btn-garbage w-100">Магазин</button></div>				
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	<!--content-->
-	
+		<div class="row">
+			<div class="col">
+				
+			</div>
+			<div class="col">
+				
+			</div>
+		</div>
 	</div>
 	<!--header-->
 	
