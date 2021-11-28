@@ -102,6 +102,29 @@ session_start();
 			margin-left: 20px;
 			margin-bottom: 20px;
 		}
+
+		.btn-more {
+			border: 1px solid #000000;
+			box-sizing: border-box;
+			border-radius: 10px;
+			background: none;
+		}
+
+		.btn-more:hover {
+			border: 1px solid #000000;
+			box-sizing: border-box;
+			border-radius: 10px;
+			background: #000000;
+			color: white;
+		}
+
+		.gto {
+			font-style: normal;
+			font-weight: 800;
+			font-size: 24px;
+			line-height: 125%;
+			color: #082A30;
+		}
 				
 	</style>
 </head>
@@ -125,12 +148,26 @@ session_start();
 			</div>
 		</div>
 	<!--content-->
-		<div class="row">
-			<div class="col">
-				
+		<div class="row" style="height: 80vh;">
+			<div class="col d-flex">
+				<div class="row my-auto">
+					<div class="col-8 mx-auto">						
+						<div class="row my-3"><h1>ПОДГОТОВКА К ГТО ЗА 3 МЕСЯЦА</h1></div>
+						<div class="row"><p>Всероссийский физкультурно-спортивный комплекс «Готов к труду и обороне» (ГТО) — полноценная программная и нормативная основа физического воспитания населения страны, нацеленная на развитие массового спорта и оздоровление нации. <br><br> Комплекс ГТО предусматривает подготовку к выполнению и непосредственное выполнение населением различных возрастных групп (от 6 до 70 лет и старше) установленных нормативных требований по трем уровням трудности, соответствующим золотому, серебряному и бронзовому знакам отличия «Готов к труду и обороне» (ГТО).</p></div>
+						<div class="row">
+							<button class="btn btn-more my-4">
+								ПОДРОБНЕЕ
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="col">
-				
+				<div class="row"><h1 class="gto mx-auto">НОРМАТИВЫ ГТО ДЛЯ ВЫПУСКНИКОВ:</h1></div>
+					<div class="row"><div class="col-7 mx-auto">
+						<img src="img/gto.png" class="img-fluid" alt="Нормативы">
+					</div>
+					</div>
 			</div>
 		</div>
 	</div>

@@ -3,7 +3,6 @@
 	include "connect.php";
 	$query = mysqli_query($con, "SELECT * FROM users WHERE id='{$_SESSION['id']}'");
 	$stroka=$query->fetch_assoc();
-	echo $stroka['grudak_lvl'];
 ?>
 
 <!DOCTYPE html>
