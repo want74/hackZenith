@@ -88,7 +88,7 @@
 						<div class="row">
 							<p class="headerReg">Введите данные для входа</p>
 						</div>
-						<form action="reg.php" method="POST">
+						<form action="check.php" method="POST">
 							
 							<div class="row mt-5">
 								<div class="col">
