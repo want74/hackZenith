@@ -68,6 +68,10 @@
 	background: none;
 	transition: 0.7s;
 	}
+	body {
+		font-family: 'Montserrat', sans-serif;
+		font-family: 'Poppins', sans-serif;
+	}
 </style>
 <body style="background: #EAEAEA;">
 	<div class="col">

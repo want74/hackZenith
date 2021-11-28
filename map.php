@@ -35,6 +35,16 @@
 		font-size: 36px;
 		line-height: 125%;
 		}
+
+		body {
+			font-family: 'Montserrat', sans-serif;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		.muscle {
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			font-family: 'Montserrat', sans-serif;
+		}
 	</style>
 </head>
 <body>
@@ -66,7 +76,7 @@
 				<div class="row ">
 					<div class="col-10 mx-auto">
 						<!--Чел-->
-						<h1 class="text-center">Выберите мышцу</h1>
+						<h1 class="text-center muscle my-3">ВЫБЕРИТЕ МЫШЦУ</h1>
 						<p class="text-center"><svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" style="width: 50vw;height: 40vw;" viewBox="0 0 443 380" fill="none" version="1.1" id="svg295" sodipodi:docname="человек перед зад.svg" inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)">
 							  <defs id="defs299"/>
 							  <sodipodi:namedview id="namedview297" pagecolor="#505050" bordercolor="#eeeeee" borderopacity="1" inkscape:pageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" showgrid="false" inkscape:zoom="1.4142136" inkscape:cx="153.08862" inkscape:cy="166.52365" inkscape:window-width="1920" inkscape:window-height="1017" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg295"/>

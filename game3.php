@@ -102,7 +102,14 @@ session_start();
 			margin-left: 20px;
 			margin-bottom: 20px;
 		}
-				
+		
+		body {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 36px;
+			line-height: 125%;
+		}		
 	</style>
 </head>
 <body>

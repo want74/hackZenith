@@ -16,6 +16,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@600&display=swap" rel="stylesheet">
 	<script src="https://unpkg.com/konva@8.3.0/konva.min.js"></script>
+
 	<title></title>
 	<style>
 		/*Ховер на все элементы SVG*/
@@ -34,80 +35,19 @@
 		}
 		.header-botgy{
 			background:#082A30 ;
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 36px;
+			line-height: 125%;
 		}
 		.header-text{
 		color: #E0E2DB;
-		font-family: 'Montserrat', sans-serif;
+		font-family: Montserrat;
 		font-style: normal;
 		font-weight: 800;
 		font-size: 36px;
 		line-height: 125%;
-		}
-
-		.circle {
-			border-radius: 100000px;
-			width: 50px;
-			height: 50px;
-			background: #93B1B9;
-		}
-		#a1 {
-			position: absolute;
-			left: 100px;
-			top: 100px;
-		}
-
-		#a2 {
-			position: absolute;
-			left: 550px;
-			top: 100px;
-		}
-
-		#a3 {
-			position: absolute;
-			left: 550px;
-			top: 400px;
-		}
-
-		#a4 {
-			position: absolute;
-			left: 900px;
-			top: 400px;
-		}
-
-		#a5 {
-			position: absolute;
-			left: 900px;
-			top: 700px;
-		}
-
-		#a6 {
-			position: absolute;
-			left: 100px;
-			top: 700px;
-		}
-
-		#a7 {
-			position: absolute;
-			left: 100px;
-			top: 1000px;
-		}
-
-		#a8 {
-			position: absolute;
-			left: 900px;
-			top: 1000px;
-		}
-
-		#a9 {
-			position: absolute;
-			left: 900px;
-			top: 1300px;
-		}
-
-		#a10 {
-			position: absolute;
-			left: 550px;
-			top: 1300px;
 		}
 		
 		.con{
@@ -122,6 +62,13 @@
 		}
 		.krug-color{
 			background:#93B1B9 ;
+		}
+		.d {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 36px;
+			line-height: 125%;
 		}
 	</style>
 </head>
@@ -150,7 +97,7 @@
 		<div class="row">
 
 			<div class="col-8  mx-auto bg-white mt-5" style="border-radius: 25px;">
-				<div class="row"><h1 class="text-center mx-auto">Дорожная карта:</h1></div>	
+				<div class="row d"><h1 class="text-center mx-auto">Дорожная карта:</h1></div>	
 				<div class="row ">
 					<div class="col-11 mx-auto bg-dark mb-4" style="border-radius: 25px;height: auto;">
 						<div class="row">
